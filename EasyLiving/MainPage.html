@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <style>
+
+        body{
+            background-color: powderblue; 
+            font-family: Tahoma;
+            font-size: medium;
+        }
+
+        header, footer {
+            padding: 1em;
+            color: white;
+            background-color: darkslategray;
+            clear: left;
+            text-align: center;
+        }
+
+        nav {
+            background-color: azure;
+            clear: left;
+            color: darkslategray;
+            font-weight:bold;
+        }
+
+            nav.button {
+                font-size: large;
+                color: black;
+                float: right;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                border-style: outset;
+                border-width: thin;
+                border-color: darkslategray;
+                margin: 5px;
+            }
+
+            nav.active-button {
+                font-size: large;
+                color: white;
+                float: right;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                border-style: outset;
+                border-width: thin;
+                border-color: darkslategray;
+                margin: 5px;
+                background-color: darkslategray;
+            }
+
+            nav.dropdown {
+                color: black;
+                position: relative;
+                display: inline-block;
+            }
+
+            nav.dropdown-content {
+                right:0;
+                float:right;
+                display: none;
+                position: absolute;
+                background-color: darkslategray;
+                min-width: 170px;
+                overflow: auto;
+                box-shadow: 4px 4px 4px 4px darkslategray;
+                padding: 2px;
+            }
+
+            nav.dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            nav.link-button {
+                color: black;
+                font-size: medium;
+                text-align: center;
+                border: 1px solid darkslategray;
+                padding: 16px;
+            }
+
+        div.container {
+            max-width: 400px;
+            height: 200px;
+            border-style: outset;
+            border-width: medium;
+            border-color: darkslategray;
+            margin: 10px;
+            float: left;
+            background-color: azure ;
+        }
+
+            div.info {
+                max-width: 300px;
+                float: left;
+                padding: 5px;
+            }
+
+            div.service{
+                font-weight: bold;
+                font-size: large;
+            }
+
+            div.name{
+                font-weight: bold;
+            }
+
+            div.pic {
+                max-width: 100px;
+                float: left;
+                clear: right;
+            }
+
+        a {
+            color: inherit;
+        }
+
+    </style>
+
+    <title>Easy Home Living (Las Vegas)</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img alt="EHL-Logo" />Easy Home Living (Las Vegas)
+        </h1>
+    </header>
+
+    <nav>
+        <hr />
+        <nav class="button">
+            <nav class="dropdown">
+                <span>Services</span>
+                <nav class="dropdown-content">
+                    <nav class="link-button">
+                        <a href="Liz.html">House Cleaning</a>
+                    </nav>
+                    <nav class="link-button">
+                        <a href="Scott.html">Handyman</a>
+                    </nav>
+                    <nav class="link-button">
+                        <a href="Mat.html">Air Conditioning</a>
+                    </nav>
+                    <nav class="link-button">
+                        <a href="Miguel.html">Programming</a>
+                    </nav>
+                </nav>
+            </nav>
+        </nav>
+        <a href="About.html">
+            <nav class="button">
+                About
+            </nav>
+        </a>
+        <a href="MainPage.html">
+            <nav class="active-button">
+                Home
+            </nav>
+        </a>
+        <br />
+        <br />
+        <hr />
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="info">
+                <div class="service">
+                    Home Cleaning<br />
+                </div>
+                <div class="name">
+                    Liz<br />
+                </div>
+                This is where the description works
+            </div>
+            <div class="pic">
+                <img alt="LizPic" />
+            </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <div class="service">
+                    Handyman<br />
+                </div>
+                <div class="name">
+                    Scott Day<br />
+                </div>
+                This is where the description works
+            </div>
+            <div class="pic">
+                <img alt="ScottPic" />
+            </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <div class="service">
+                    Air Conditioning<br />
+                </div>
+                <div class="name">
+                    Mattheus<br />
+                </div>
+                This is where the description works
+            </div>
+            <div class="pic">
+                <img alt="MatPic" />
+            </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <div class="service">
+                    Programming<br />
+                </div>
+                <div class="name">
+                    Miguel Bermudez<br />
+                </div>
+                This is where the description works
+            </div>
+            <div class="pic">
+                <img alt="MiguelPic" />
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        @EasyHomeLiving
+    </footer>
+
+</body>
+</html>
