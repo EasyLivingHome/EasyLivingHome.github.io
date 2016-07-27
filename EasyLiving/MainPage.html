@@ -3,6 +3,16 @@
 <head>
     <style>
 
+        /* 
+            Colors used
+
+            powderblue
+            darkslategray
+            azure
+            cadetblue
+            lightcoral
+        */
+
         body{
             background-color: powderblue; 
             font-family: Tahoma;
@@ -61,8 +71,8 @@
             }
 
             nav.dropdown-content {
-                right:0;
-                float:right;
+                right: 0;
+                float: right;
                 display: none;
                 position: absolute;
                 background-color: darkslategray;
@@ -85,8 +95,8 @@
             }
 
         div.service-container {
-            max-width: 400px;
-            height: 200px;
+            max-width: 600px;
+            min-height: 200px;
             border-style: outset;
             border-width: medium;
             border-color: darkslategray;
@@ -98,8 +108,11 @@
         }
 
             div.info {
-                max-width: 300px;
+                min-width: 390px;
+                max-width: 390px;
                 float: left;
+                padding-left: 5px;
+                padding-right: 5px;
             }
 
             div.service{
@@ -108,8 +121,7 @@
             }
 
             div.service:hover {
-                color: aquamarine;
-                <!--  **** -->
+                color: cadetblue;
             }
 
             div.name{
@@ -118,18 +130,22 @@
             }
 
             div.name:hover {
-                color: pink;
-                <!-- **** -->
+                color: lightcoral;
             }
 
             div.pic {
-                max-width: 100px;
+                max-width: 190px;
                 float: left;
                 clear: right;
+                padding: 5px;
             }
-            
-            div.click-to-learn {
-                font-size:smaller;
+
+            div.bold-message {
+                font-weight: bold;
+            }
+
+            div.bold-message:hover{
+                color: cadetblue;
             }
 
             div.hablamos {
@@ -148,6 +164,11 @@
             clear: both;
         }
 
+        img {
+            width:190px;
+            height:190px;
+        }
+
         a {
             color: inherit;
 			text-decoration: none;
@@ -161,9 +182,8 @@
 
 <body>
     <header>
-        <h1>
-            <img alt="EHL-Logo" />Easy Home Living (Las Vegas)
-        </h1>
+    <img src="EHL-Logo.jpg" alt="EHL-Logo" style="width:300px; height:100px" />
+                <h1>Easy Home Living (Las Vegas)</h1>
     </header>
 
     <nav>
@@ -228,7 +248,7 @@
 			</div>
 			<a href="Liz.html">
 				<div class="pic">
-					<img alt="LizPic" />
+					<img src="LizPic.jpg" alt="Liz" />
 				</div>
 			</a>
         </div>
@@ -249,7 +269,7 @@
 			</div>
 			<a href="Scott.html">
 				<div class="pic">
-					<img alt="ScottPic" />
+					<img src="ScottPic.jpg" alt="Scott" />
 				</div>
 			</a>
         </div>
@@ -270,7 +290,7 @@
 			</div>
 			<a href="Mat.html">
 				<div class="pic">
-					<img alt="MatPic" />
+					<img src="MatPic.jpg" alt="Mattheus" />
 				</div>
 			</a>
         </div>
@@ -290,8 +310,10 @@
 				Whether you are in need for automation, website design, or IT solutions, we are here to help you and your business. <br />
 				<br />
                 <a href="Miguel.html">
-                    <b>Efficiency for you.</b> <br />
-                    <div class="click-to-learn">Click to learn more...</div>
+                    <div class="bold-message">
+                        Efficiency for you. <br /> 
+                        <span style="font-weight:normal;font-size:smaller;">Click to learn more...</span>
+                    </div>
                 </a>
                 <br />
                 <div class="hablamos">
@@ -300,7 +322,7 @@
 			</div>
 			<a href="Miguel.html">
 				<div class="pic">
-					<img alt="MiguelPic" />
+					<img src="MiguelPic.jpg" alt="Miguel" />
 				</div>
 			</a>
         </div>
