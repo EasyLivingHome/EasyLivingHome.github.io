@@ -1,4 +1,12 @@
-﻿body{
+﻿/* Main colors used:
+
+    Background: powderblue
+    Dark: darkslategray
+    light: azure
+
+*/
+
+body{
     background-color: powderblue; 
     font-family: Tahoma;
     font-size: medium;
@@ -101,14 +109,14 @@ div.service-container-container {
     margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 0px;
-    background-color: darkslategray;
+    background-color: azure;
 }
 
 div.service-container {
     max-width: 600px;
     min-height: 200px;
     border-style: outset;
-    border-width: medium;
+    border-width: thin;
     border-color: darkslategray;
     border-radius: 10px;
     margin: 4px;
@@ -180,28 +188,40 @@ div.alt-container {
 }
 
 table { 
-    border: 5px double darkslategray; 
+    border: 1px solid black; 
     border-radius: 3px;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: darkslategray 3px 3px;
 }
 
-    table.liz {
-        max-width: 700px;
+    table#liz {
+        max-width: 950px;
         align-self: center;
         clear: both;
+    }
+
+    th, td {
+        border-bottom: 1px solid darkslategray;
+        padding-top: 9px;
+        padding-bottom: 9px; 
+        min-width: 140px;
     }
  
     thead { 
         border-bottom: 3px solid darkslategray; 
         font-weight: bold;
         padding: 5px;
+        color: white;
+        background-color: darkslategray;
     } 
  
-    tr.one { 
+    tr:nth-child(even){
         background-color: powderblue; 
-    } 
- 
-    tr.two { 
-        background-color: aliceblue; 
+    }
+
+    tr {
+        border-bottom: 1px solid darkslategray;
     }
 
 div.inner-div {
@@ -235,7 +255,7 @@ div.side-container {
     margin: 10px;
 }
 
-h2{
+h1{
         font-size: xx-large;
         margin-top: 10px;
         margin-bottom: 20px;
