@@ -2,7 +2,7 @@
 
     Background: powderblue
     Dark: darkslategray
-    light: azure
+    Light: azure
 
 */
 
@@ -125,6 +125,7 @@ div.service-container {
     float: left;
     background-color: azure ;
     padding: 10px;
+    box-shadow: 2px 2px darkslategray;
 }
 
 .info {
@@ -170,7 +171,7 @@ div.service-container {
 }
 
 .hablamos {
-    font-size: 14px;
+    font-size: 17px;
     font-style: italic;
 }
 
@@ -241,6 +242,8 @@ div.side-container {
     float: right;
     clear: right;
     max-width: 500px;
+    min-width: 200px;
+    min-height: 250px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
