@@ -13,7 +13,7 @@ body {
 }
         
 header {
-    padding: 14px;
+    padding: 20px;
     color: white;
     background-color: darkslategray;
     border-radius: 3px;
@@ -21,6 +21,8 @@ header {
     font-style: italic;
     font-family: Helvetica;
     font-weight: bolder;
+    margin-left: 10px;
+    margin-right: 10px;
 }
         
 footer {
@@ -29,6 +31,8 @@ footer {
     border-radius: 3px;
     background-color: darkslategray;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 ul.nav {
@@ -41,8 +45,8 @@ ul.nav {
     list-style-type: none;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 0;
     overflow: hidden;
 }
@@ -109,31 +113,34 @@ div.service-container-container {
     padding: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: azure;
+    text-align: center;
+    position: relative;
 }
 
 div.service-container {
-    max-width: 600px;
-    min-height: 200px;
     border-style: outset;
     border-width: thin;
     border-color: darkslategray;
     border-radius: 10px;
-    margin: 4px;
-    float: left;
+    margin: 10px;
+    display:inline-block;
     background-color: azure ;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 2px 2px darkslategray;
 }
 
 .info {
-    min-width: 390px;
-    max-width: 390px;
+    min-width: 400px;
+    max-width: 400px;
     float: left;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
 }
 
 .service {
@@ -147,7 +154,7 @@ div.service-container {
 
 .name {
     font-style: italic;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .name:hover {
@@ -155,10 +162,9 @@ div.service-container {
 }
 
 .pic {
-    max-width: 190px;
-    float: left;
-    clear: right;
-    padding: 5px;
+    padding: 30px;
+    display:inline-block;
+    position: relative;
 }
 
 .bold-message {
@@ -188,8 +194,8 @@ div.alt-container {
     border-radius: 7px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: azure;
 }
 
@@ -254,13 +260,15 @@ div.side-container {
 
 .paragraph {
     float:left;
-    max-width:80%;
+    max-width:70%;
 }
 
 .picture {
-    float:left;
-    clear:right;
-    margin: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
