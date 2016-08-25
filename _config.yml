@@ -1,0 +1,11 @@
+# Site Settings
+title: Easy Living Home Care
+email: miguelab92@gmail.com
+description: >
+  Easy Home Living website
+baseurl: ""
+url: "https://easylivinghome.github.io/"
+github_username:  easylivinghome
+# Build Settings
+kramdown:
+  input: GFM
